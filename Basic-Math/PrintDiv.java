@@ -20,3 +20,4 @@ public class PrintDiv {
         System.out.println("Sorted Divisors: " + ls);
     }
 }
+ 

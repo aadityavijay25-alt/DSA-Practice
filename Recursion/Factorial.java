@@ -1,5 +1,5 @@
 package Recursion;
-
+    
 import java.util.Scanner;
 
 public class Factorial {
@@ -14,6 +14,7 @@ public class Factorial {
         } else {
             return n * factorial(n-1);
         }
+
     }
     
 

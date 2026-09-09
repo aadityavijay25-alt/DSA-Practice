@@ -14,15 +14,10 @@ public class Appears {
         for(int i=0; i<=n; i++){
             hash[arr[i]] += 1;
         }
-
         int q = sc.nextInt();
         while(q>0){
             int number = sc.nextInt();
-            if (number >= 0 && number < hash.length) {
-                System.out.println(hash[number]); 
-            } else {
-                System.out.println(0);
-            }
+            System.out.println((number >= 0 && number < hash.length) ? hash[number] : 0);
             q--;
         }
     }

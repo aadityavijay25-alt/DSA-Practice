@@ -1,3 +1,4 @@
+package TwoPointers;
 public class RemoveDup {
     public static void main(String[] args) {
         int[] arr = {1,1,1,2,2,3,3,4,4,6};
@@ -5,7 +6,7 @@ public class RemoveDup {
         int res = 1;
         int j = 1;
         while(j<arr.length){
-            if(arr[i] == arr[i-1]){
+            if(arr[j] == arr[j-1]){
                 j++;
                 continue;
             } else{

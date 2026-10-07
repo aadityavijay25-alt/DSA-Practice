@@ -13,7 +13,7 @@ public class Sum3Closest {
         int closestSum = a[0] + a[1] + a[2]; 
         int minDiff = Math.abs(closestSum - target);
 
-        for (int i = 0; i < n - 2; i++) {        
+        for (int i = 0; i < n - 2; i++) {        // fix the first number
             int l = i + 1;
             int r = n - 1;
 
@@ -21,7 +21,7 @@ public class Sum3Closest {
                 int sum = a[i] + a[l] + a[r];    
                 int diff = Math.abs(sum - target);
 
-                if (diff < minDiff) {            
+                if (diff < minDiff) {      // update the best answer      
                     minDiff = diff;
                     closestSum = sum;
                 }

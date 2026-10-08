@@ -1,7 +1,5 @@
 package TwoPointers;
-
 import java.util.Arrays;
-
 class Solution { 
     public void sortColors(int[] a) { 
         int low = 0; 
@@ -29,10 +27,10 @@ class Solution {
 
 public class DutchFlag {
     public static void main(String[] args) {
-        Solution solver = new Solution();
+        Solution sol = new Solution();
 
         int[] nums = {2, 0, 2, 1, 1, 0};
-        solver.sortColors(nums);
+        sol.sortColors(nums);
         System.out.println("Sorted array:   " + Arrays.toString(nums));
     }
 }

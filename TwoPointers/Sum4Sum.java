@@ -11,15 +11,14 @@ public class Sum4Sum {
         int n = a.length;
         int target = 0;
 
-        // 1. Sort the array first
         Arrays.sort(a);
 
         for (int i = 0; i < n; i++) {
-            // Skip duplicates for 'i'
+            // Skip duplicates for i
             if (i > 0 && a[i] == a[i - 1]) continue;
 
             for (int j = i + 1; j < n; j++) {
-                // Skip duplicates for 'j'
+                // Skip duplicates for j
                 if (j > i + 1 && a[j] == a[j - 1]) continue;
 
                 int p = j + 1;
@@ -37,7 +36,7 @@ public class Sum4Sum {
                         p++;
                         q--;
 
-                        // Skip duplicates for 'p' and 'q'
+                        // Skip duplicates for p and q
                         while (p < q && a[p] == a[p - 1]) p++;
                         while (p < q && a[q] == a[q + 1]) q--;
                     }

@@ -7,7 +7,7 @@ public class FruitsIntoBuckets {
         int[] a = {0,1,2,2};
         int k = 3;
         int n= a.length;
-        int left = 0;
+        int left = 0; 
         int maxLen = 0;
         HashMap<Integer,Integer> freq = new HashMap<>();
         for (int right = 0; right < n; right++){

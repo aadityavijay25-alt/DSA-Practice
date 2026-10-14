@@ -16,15 +16,12 @@ public class LongestRepeating {
 
         for (int high = 0; high < n; high++) {
             f[s.charAt(high) - 'A']++;
-
             maxCount = Math.max(maxCount, f[s.charAt(high) - 'A']);
-
             int len = high - low + 1;
             if (len - maxCount > k) {
                 f[s.charAt(low) - 'A']--;
                 low++;
             }
-
             res = Math.max(res, high - low + 1);
         }
         return res;

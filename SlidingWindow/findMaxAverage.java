@@ -16,7 +16,7 @@ public class findMaxAverage {
             maxSum = Math.max(maxSum, sum);
         }
 
-        long maxAverage = (long) maxSum / k;
+        double maxAverage = (double) maxSum / k;
 
         System.out.println(maxAverage);
     }
